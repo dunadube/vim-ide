@@ -1,8 +1,9 @@
 vim-ide
 =======
 
-These is my personal vim configuration. To make it
-work check it out and then symlink the vimrc file 
+This is my personal vim configuration. It uses
+pathogen vim package manager. 
+To make it work check it out and then symlink the vimrc file 
 and the autoload and bundle directories:
 
 * symlink vimrc: ln -s vim-ide/vimrc .vimrc
