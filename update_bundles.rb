@@ -1,37 +1,36 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-#  "git://github.com/astashov/vim-ruby-debugger.git",
-#  "git://github.com/scrooloose/nerdtree.git",
-#  "git://github.com/timcharper/textile.vim.git",
-#  "git://github.com/tpope/vim-cucumber.git",
-#  "git://github.com/tpope/vim-fugitive.git",
-#  "git://github.com/tpope/vim-git.git",
-#  "git://github.com/tpope/vim-haml.git",
-#  "git://github.com/tpope/vim-markdown.git",
-#  "git://github.com/tpope/vim-rails.git",
-  "git://github.com/tpope/vim-repeat.git",
-  "git://github.com/tsaleh/vim-align.git",
-#  "git://github.com/tsaleh/vim-shoulda.git",
-  "https://github.com/Raimondi/delimitMate.git",
-  "git://github.com/tsaleh/vim-tcomment.git",
-  "git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/tsaleh/vim-supertab.git",
-  "https://github.com/tsaleh/vim-matchit.git",
-  "git://github.com/tpope/vim-surround.git",
-  "https://github.com/vim-scripts/taglist.vim.git",
+  #  "git://github.com/astashov/vim-ruby-debugger.git",
+  #  "git://github.com/scrooloose/nerdtree.git",
+  #  "git://github.com/timcharper/textile.vim.git",
+  #  "git://github.com/tpope/vim-cucumber.git",
+  "http://github.com/tpope/vim-fugitive.git",
+  #  "git://github.com/tpope/vim-git.git",
+  #  "git://github.com/tpope/vim-haml.git",
+  "http://github.com/tpope/vim-markdown.git",
+  #  "git://github.com/tpope/vim-rails.git",
+  "http://github.com/tpope/vim-repeat.git",
+  "http://github.com/tsaleh/vim-align.git",
+  #  "git://github.com/tsaleh/vim-shoulda.git",
+  "http://github.com/Raimondi/delimitMate.git",
+  "http://github.com/tsaleh/vim-tcomment.git",
+  "http://github.com/msanders/snipmate.vim.git",
+  "http://github.com/tsaleh/vim-supertab.git",
+  "http://github.com/tsaleh/vim-matchit.git",
+  "http://github.com/tpope/vim-surround.git",
+  "http://github.com/vim-scripts/taglist.vim.git",
 
-# Ruby
-  "https://github.com/dmcinnes/ruby_single_test.git",
-  "git://github.com/vim-ruby/vim-ruby.git",
+  # Ruby
+  "http://github.com/vim-ruby/vim-ruby.git",
 
 # Colorschemes
-  "https://github.com/rphillips/vim-colorschemes.git",
-  "https://github.com/cschlueter/vim-wombat.git",
-  "git://github.com/tpope/vim-vividchalk.git",
-  "https://github.com/jpo/vim-railscasts-theme.git",
-  "https://github.com/cschlueter/vim-mustang.git",
-  "https://github.com/vim-scripts/peaksea.git",
+  # "https://github.com/rphillips/vim-colorschemes.git",
+  # "https://github.com/cschlueter/vim-wombat.git",
+  # "git://github.com/tpope/vim-vividchalk.git",
+  # "https://github.com/jpo/vim-railscasts-theme.git",
+  "http://github.com/cschlueter/vim-mustang.git",
+  # "https://github.com/vim-scripts/peaksea.git",
 ]
 
 vim_org_scripts = [
@@ -40,9 +39,6 @@ vim_org_scripts = [
 #  ["jquery",        "12107", "syntax"],
 ]
 
-miscellaneous = [
-#  ["vim-mustang/colors", "mustang.vim", "http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484"],
-]
 
 require 'fileutils'
 require 'open-uri'
@@ -70,9 +66,3 @@ vim_org_scripts.each do |name, script_id, script_type|
   end
 end
 
-miscellaneous.each do |rec|
-  plugin_dir = rec[0]
-  FileUtils.mkdir_p plugin_dir 
-  
-  `curl #{rec[2]} > #{plugin_dir + "/" + rec[1]}`
-end
