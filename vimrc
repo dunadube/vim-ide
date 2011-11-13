@@ -139,6 +139,9 @@ nmap <leader>w :w!<cr>
 " Speed up closing tabs
 nmap <leader>q :q<cr>
 
+" Map FuzzyFinder
+map <leader>t :FufFile<cr>
+
 " Tab configuration
 map <leader>tn :tabnew<cr>
 map <leader>te :tabedit

@@ -5,13 +5,15 @@ git_bundles = [
   #  "git://github.com/scrooloose/nerdtree.git",
   #  "git://github.com/timcharper/textile.vim.git",
   #  "git://github.com/tpope/vim-cucumber.git",
-  "http://github.com/tpope/vim-fugitive.git",
+  # "http://github.com/tpope/vim-fugitive.git",
   #  "git://github.com/tpope/vim-git.git",
   #  "git://github.com/tpope/vim-haml.git",
   "http://github.com/tpope/vim-markdown.git",
   #  "git://github.com/tpope/vim-rails.git",
   "http://github.com/tpope/vim-repeat.git",
   "http://github.com/tsaleh/vim-align.git",
+  "https://github.com/vim-scripts/L9.git",   # Required by FuzzyFinder
+  "http://github.com/vim-scripts/FuzzyFinder.git",
   #  "git://github.com/tsaleh/vim-shoulda.git",
   "http://github.com/Raimondi/delimitMate.git",
   "http://github.com/tsaleh/vim-tcomment.git",
@@ -20,6 +22,7 @@ git_bundles = [
   "http://github.com/tsaleh/vim-matchit.git",
   "http://github.com/tpope/vim-surround.git",
   "http://github.com/vim-scripts/taglist.vim.git",
+  # "http://github.com/mileszs/ack.vim",
 
   # Ruby
   "http://github.com/vim-ruby/vim-ruby.git",
