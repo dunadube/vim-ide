@@ -27,12 +27,16 @@ git_bundles = [
   # Ruby
   "http://github.com/vim-ruby/vim-ruby.git",
 
+  # Javascript Syntax
+  # "http://github.com/serverhorror/javascript.vim.git",
+
 # Colorschemes
   # "https://github.com/rphillips/vim-colorschemes.git",
   # "https://github.com/cschlueter/vim-wombat.git",
   # "git://github.com/tpope/vim-vividchalk.git",
   # "https://github.com/jpo/vim-railscasts-theme.git",
   "http://github.com/cschlueter/vim-mustang.git",
+  "http://github.com/goatslacker/mango.vim.git",
   # "https://github.com/vim-scripts/peaksea.git",
 ]
 

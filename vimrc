@@ -56,7 +56,8 @@ if $COLORTERM == 'gnome-terminal'
   "set background=dark
   
   " lets use a cool colorscheme
-  colorscheme mustang
+  " colorscheme mustang
+  colorscheme mango
 endif
 
 set title " set title in terminal
