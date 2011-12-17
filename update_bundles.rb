@@ -5,7 +5,8 @@ git_bundles = [
   #  "git://github.com/scrooloose/nerdtree.git",
   #  "git://github.com/timcharper/textile.vim.git",
   #  "git://github.com/tpope/vim-cucumber.git",
-  # "http://github.com/tpope/vim-fugitive.git",
+  "http://github.com/sjl/gundo.vim.git",
+  "http://github.com/tpope/vim-fugitive.git",
   #  "git://github.com/tpope/vim-git.git",
   #  "git://github.com/tpope/vim-haml.git",
   "http://github.com/tpope/vim-markdown.git",
@@ -54,8 +55,8 @@ bundles_dir = File.join(File.dirname(__FILE__), "bundle")
 
 FileUtils.cd(bundles_dir)
 
-puts "Trashing everything (lookout!)"
-Dir["*"].each {|d| FileUtils.rm_rf d }
+# puts "Trashing everything (lookout!)"
+# Dir["*"].each {|d| FileUtils.rm_rf d }
 
 git_bundles.each do |url|
   dir = url.split('/').last.sub(/\.git$/, '')

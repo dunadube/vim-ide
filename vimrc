@@ -149,6 +149,9 @@ map <leader>te :tabedit
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
+" -------------------------------------------------------
+" GUndo helps with the vim undo tree
+nnoremap <F3> :GundoToggle<CR>
 
 " -------------------------------------------------------
 " Cope opens the quickfix window
@@ -209,9 +212,10 @@ let g:SuperTabDefaultCompletionType = "context"
 " -------------------------------------------------------
 " Filetype specific settings
 " -------------------------------------------------------
-
-" -------------------------------------------------------
 " Ruby
 au FileType ruby set makeprg=ruby\ % 
 au FileType ruby map <F5> :make<cr>
+" Javascript
+au FileType javascript set makeprg=node\ % 
+au FileType javascript map <F5> :make<cr>
 
